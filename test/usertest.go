@@ -16,8 +16,8 @@ func main() {
 
 	db.AutoMigrate(&model.UserBasic{})
 
-	//data := model.UserBasic{Name: "test1", PassWord: "123456", Phone: "17888889999"}
-	//db.Create(&data)
+	data := model.UserBasic{Name: "test1", PassWord: "123456", Phone: "17888889999"}
+	db.Create(&data)
 
 	//var user model.UserBasic
 	//fmt.Println(db.First(&user))
